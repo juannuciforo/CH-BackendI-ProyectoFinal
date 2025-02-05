@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h1 class="center-align">{{product.title}}</h1>
+        </div>
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <p>{{product.description}}</p>
+                    <p><strong>Precio: ${{product.price}}</strong></p>
+                    <p><strong>Stock: {{product.stock}}</strong></p>
+                    <p><strong>Categoría: {{product.category}}</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="center-align">
+            <button onclick="window.history.back()" class="btn waves-effect waves-light">
+                Volver
+                <i class="material-icons right">arrow_back</i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>

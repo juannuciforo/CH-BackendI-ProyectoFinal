@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "title": "Smartphone Galaxy S23",
+    "description": "Teléfono Samsung último modelo con 256GB de almacenamiento",
+    "code": "SAMS23256",
+    "price": 999.99,
+    "status": true,
+    "stock": 15,
+    "category": "Electrónica",
+    "thumbnails": [
+      "galaxy-s23-1.jpg",
+      "galaxy-s23-2.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Zapatillas Nike Air Max",
+    "description": "Zapatillas deportivas con tecnología de amortiguación Air",
+    "code": "NKAM2024",
+    "price": 129.99,
+    "status": true,
+    "stock": 25,
+    "category": "Calzado",
+    "thumbnails": [
+      "nike-airmax-blue.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "MacBook Pro M2",
+    "description": "Laptop Apple con chip M2, 512GB SSD y 16GB RAM",
+    "code": "APPM2512",
+    "price": 1499.99,
+    "status": true,
+    "stock": 8,
+    "category": "Electrónica",
+    "thumbnails": [
+      "macbook-m2-1.jpg",
+      "macbook-m2-2.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Cafetera Nespresso",
+    "description": "Cafetera automática compatible con cápsulas Nespresso",
+    "code": "NSCFE01",
+    "price": 199.99,
+    "status": true,
+    "stock": 20,
+    "category": "Electrodomésticos",
+    "thumbnails": [
+      "nespresso-black.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Monitor Gaming 27'",
+    "description": "Monitor gaming 144Hz, 2K, 1ms respuesta",
+    "code": "MON27144",
+    "price": 299.99,
+    "status": true,
+    "stock": 12,
+    "category": "Gaming",
+    "thumbnails": [
+      "monitor-gaming-1.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "MacBook Pro M3",
+    "description": "La última MacBook Pro con chip M3, 1TB SSD y 32GB RAM. (Editada desde Postman como prueba)",
+    "code": "APPM3-32",
+    "price": 2499.99,
+    "status": true,
+    "stock": 10,
+    "category": "Electrónica",
+    "thumbnails": [
+      "macbook-m3-1.jpg",
+      "macbook-m3-2.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "MacBook Air M2",
+    "description": "MacBook Air con chip M2, 512GB SSD y 16GB RAM. Perfecta para movilidad y rendimiento. (Agregado desde request para como prueba)",
+    "code": "APPM2-16",
+    "price": 1899.99,
+    "status": true,
+    "stock": 15,
+    "category": "Electrónica",
+    "thumbnails": [
+      "macbook-air-m2-1.jpg",
+      "macbook-air-m2-2.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "iPad Pro 2024",
+    "description": "iPad Pro con chip M2, 256GB SSD y 8GB RAM. Pantalla XDR de 12.9 pulgadas. (Agregado desde form web como prueba)",
+    "code": "IPADM2-256",
+    "price": 1299.99,
+    "status": true,
+    "stock": 20,
+    "category": "Electrónica",
+    "thumbnails": []
+  },
+  {
+    "id": 9,
+    "title": "Monitor Gaming ASUS ROG",
+    "description": "Monitor gaming ASUS ROG Swift 27 pulgadas, 1ms, 165Hz, 2K QHD. (Agregado desde form web como prueba)",
+    "code": "ASUS-ROG27",
+    "price": 799.99,
+    "status": true,
+    "stock": 8,
+    "category": "Gaming",
+    "thumbnails": []
+  },
+  {
+    "id": 10,
+    "title": "Apple Watch Series 9",
+    "description": "Apple Watch Series 9 con GPS, caja de aluminio de 45mm, monitor cardíaco y pantalla Retina. (Agregado desde form web como prueba)",
+    "code": "WATCH-S9",
+    "price": 499.99,
+    "status": true,
+    "stock": 25,
+    "category": "Electrónica",
+    "thumbnails": []
+  },
+  {
+    "id": 11,
+    "title": "Sony WH-1000XM5",
+    "description": "Auriculares inalámbricos Sony con cancelación de ruido, 30 horas de batería y audio Hi-Res. (Agregado desde form web como prueba)",
+    "code": "SONY-WH5",
+    "price": 399.99,
+    "status": true,
+    "stock": 12,
+    "category": "Electrónica",
+    "thumbnails": []
+  },
+  {
+    "id": 12,
+    "title": "Samsung Galaxy Tab S9",
+    "description": "Samsung Galaxy Tab S9 con pantalla AMOLED de 11 pulgadas, 256GB, 12GB RAM y S Pen incluido. (Agregado desde form web como prueba)",
+    "code": "TAB-S9-256",
+    "price": 899.99,
+    "status": true,
+    "stock": 18,
+    "category": "Electrónica",
+    "thumbnails": []
+  },
+  {
+    "id": 13,
+    "title": "Razer BlackShark V2 Pro",
+    "description": "Audífonos gaming inalámbricos Razer con micrófono desmontable, sonido THX 7.1 y 24 horas de batería. (Agregado desde form web como prueba)",
+    "code": "RAZER-BSV2P",
+    "price": 199.99,
+    "status": true,
+    "stock": 30,
+    "category": "Gaming",
+    "thumbnails": []
+  }
+]

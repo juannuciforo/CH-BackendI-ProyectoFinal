@@ -1,0 +1,107 @@
+<div class="container">
+    <h1 class="center-align">Productos en tiempo real</h1>
+
+    <!-- Formulario (parte que queda fija) -->
+    <div class="row">
+        <form id="productForm" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="title" type="text" class="validate" required>
+                    <label for="title">Título del Producto</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="code" type="text" class="validate" required>
+                    <label for="code">Código</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="description" class="materialize-textarea"></textarea>
+                    <label for="description">Descripción</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s4">
+                    <input id="price" type="number" step="0.01" class="validate" required>
+                    <label for="price">Precio</label>
+                </div>
+                <div class="input-field col s4">
+                    <input id="stock" type="number" class="validate" required>
+                    <label for="stock">Stock</label>
+                </div>
+                <div class="input-field col s4">
+                    <input id="category" type="text" class="validate" required>
+                    <label for="category">Categoría</label>
+                </div>
+            </div>
+            <div class="row center-align">
+                <button class="btn waves-effect waves-light" type="submit">
+                    Agregar Producto
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Tabla con scroll -->
+    <div style="max-height: 50vh; overflow-y: auto; margin-top: 20px;">
+        {{#if products.docs.length}}
+        <table class="striped bordered centered responsive-table">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Código</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Categoría</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each products.docs}}
+                <tr class="product-row" onclick="window.location.href='/products/{{this._id}}'"
+                    style="cursor: pointer;">
+                    <td>{{this.title}}</td>
+                    <td>{{this.description}}</td>
+                    <td>{{this.code}}</td>
+                    <td>${{this.price}}</td>
+                    <td>{{this.stock}}</td>
+                    <td>{{this.category}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        {{else}}
+        <div class="center-align">
+            <h4 class="grey-text text-darken-2">No hay productos disponibles</h4>
+        </div>
+        {{/if}}
+    </div>
+
+    <!-- Paginación -->
+    <div class="row center-align" style="margin-top: 20px;">
+        <ul class="pagination">
+            {{#if products.hasPrevPage}}
+            <li class="waves-effect">
+                <a href="/realtimeproducts?page={{products.prevPage}}&limit=10">
+                    <i class="material-icons">chevron_left</i>
+                </a>
+            </li>
+            {{/if}}
+
+            <li class="active">
+                <a class="btn red lighten-2">Página {{products.page}}</a>
+            </li>
+
+            {{#if products.hasNextPage}}
+            <li class="waves-effect">
+                <a href="/realtimeproducts?page={{products.nextPage}}&limit=10">
+                    <i class="material-icons">chevron_right</i>
+                </a>
+            </li>
+            {{/if}}
+        </ul>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
