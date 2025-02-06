@@ -38,7 +38,7 @@ app.set("view engine", "hbs");
 app.set("views", `${__dirname}/views`);
 
 // Mongoose config
-mongoose.connect("mongodb+srv://juannuciforo:PsG2r4XVVdqK5yDZ@codercluster.s98cf.mongodb.net/products?retryWrites=true&w=majority&appName=CoderCluster")
+mongoose.connect("mongodb+srv://")
 // URL de MongoDB Atlas proporcionada en comentarios de la entrega
 .then(() => console.log("Conexión exitosa a la base de datos"))
 .catch((err) => console.log("Error de conexión a la base de datos", err));
