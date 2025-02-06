@@ -58,8 +58,7 @@
             </thead>
             <tbody>
                 {{#each products.docs}}
-                <tr class="product-row" onclick="window.location.href='/products/{{this._id}}'"
-                    style="cursor: pointer;">
+                <tr id="product-{{this._id}}" class="product-row" onclick="window.location.href='/products/{{this._id}}'" style="cursor: pointer;">
                     <td>{{this.title}}</td>
                     <td>{{this.description}}</td>
                     <td>{{this.code}}</td>

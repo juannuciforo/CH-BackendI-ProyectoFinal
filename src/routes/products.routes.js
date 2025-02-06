@@ -82,7 +82,10 @@ productsRoutes.post("/", async (req, res) => {
       product,
     });
   } catch (error) {
+    console.log("Error completo:", error); // Agregar este log
+    
     if (error.code === 11000) {
+      console.log("Campos duplicados:", error.keyValue); // Agregar este log
       return res.status(400).json({ error: "Ya existe un producto con ese código" });
     }
     if (error.name === 'ValidationError') {
